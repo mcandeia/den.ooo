@@ -25,7 +25,8 @@ export class Resolver {
       options: {
         typesHeader: boolean
         importMapResolution: boolean
-      }
+      },
+      req: Request
     ) => Promise<{
       content: string | null
       headers?: Record<string, string>
